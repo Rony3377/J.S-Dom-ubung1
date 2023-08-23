@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Static Template</title>
+    <style>
+      #ubung4 ul {
+        background-color: gray;
+      }
+
+      #ubung4 ol {
+        background-color: yellow;
+      }
+
+      .gruppe-1 {
+        background-color: skyblue;
+      }
+
+      .gruppe-2 {
+        background-color: rgb(182, 175, 168);
+      }
+
+      main .t .a {
+        background-color: rgb(147, 204, 221);
+      }
+
+      main .f .a {
+        background-color: rgb(202, 229, 233);
+      }
+
+      main .t .b {
+        background-color: rgb(76, 114, 98);
+      }
+
+      main .f .b {
+        background-color: rgb(155, 189, 165);
+      }
+
+      main .t .c {
+        background-color: rgb(161, 100, 151);
+      }
+
+      main .f .c {
+        background-color: rgb(150, 133, 149);
+      }
+
+      .ubung-a ul {
+        background-color: aquamarine;
+      }
+
+      .ubung-b ol {
+        background-color: orange;
+      }
+    </style>
+  </head>
+
+  <body>
+    <main>
+      <div>
+        <h3></h3>
+        <p></p>
+        <h3></h3>
+        <p></p>
+        <h3></h3>
+        <p></p>
+      </div>
+      <div name="ubung2">
+        <h3 name="abc"></h3>
+        <h4 name="def"></h4>
+        <p name="par"></p>
+        <div name="fld"></div>
+        <h3 name="abc"></h3>
+        <h4 name="def"></h4>
+        <p name="par"></p>
+        <div name="fld"></div>
+      </div>
+      <div>
+        <h4></h4>
+        <div></div>
+        <h4></h4>
+        <div></div>
+        <h4></h4>
+        <div></div>
+      </div>
+      <div id="ubung4">
+        <ul name="gruppe a">
+          <li name="feld1"></li>
+          <li name="feld2"></li>
+        </ul>
+        <ol name="gruppe b">
+          <li name="feld3"></li>
+          <li name="feld4"></li>
+        </ol>
+      </div>
+      <div id="ubung 5">
+        <h3 id="a"></h3>
+        <p id="b"></p>
+        <div id="c"></div>
+      </div>
+      <div class="ubung 6">
+        <h3 class="gruppe-1"></h3>
+        <h4 class="gruppe-1"></h4>
+        <p class="gruppe-1"></p>
+        <div class="gruppe-1"></div>
+        <h3 class="gruppe-2"></h3>
+        <h4 class="gruppe-2"></h4>
+        <p class="gruppe-2"></p>
+        <div class="gruppe-2"></div>
+      </div>
+      <div class="t">
+        <h4 class="a"></h4>
+      </div>
+      <div class="f">
+        <div class="a"></div>
+      </div>
+      <div class="t">
+        <h4 class="b"></h4>
+      </div>
+      <div class="f">
+        <div class="b"></div>
+      </div>
+      <div class="t">
+        <h4 class="c"></h4>
+      </div>
+      <div class="f">
+        <div class="c"></div>
+      </div>
+      <div id="ubung8">
+        <ul class="gruppe-a">
+          <li class="feld1"></li>
+          <li class="feld2"></li>
+        </ul>
+        <ol class="gruppe-b">
+          <li class="feld3"></li>
+          <li class="feld4"></li>
+        </ol>
+      </div>
+
+      <script>
+        // Verbindung ubung1 zum HTML-Element
+        const h3 = document.getElementsByTagName("h3");
+        const pm = document.getElementsByTagName("p");
+        h3[0].innerHTML += `Apfel`;
+        pm[0].innerHTML += `WebÄpfel, allgemein eine Pflanzengattung ( Malus) von Kernobstgewächsen innerhalb der Familie der Rosengewächse. Apfelfrucht, eine Sonderform der Sammelbalgfrüchte in der `;
+        h3[1].innerHTML += `Birne`;
+        pm[1].innerHTML += `WebBirnen-Arten und -Sorten sind meist sommergrüne, selten halbimmergrüne, mit Wuchshöhen von 15 bis 20 Metern mittelgroße hohe Bäume oder selten mit Wuchshöhen `;
+        h3[2].innerHTML += `Kiwi`;
+        pm[2].innerHTML += `WebKiwi (von Maori kiwi) steht für: flugunfähige Vögel der Gattung Kiwis aus Neuseeland. Kiwifrucht, die Früchte mehrerer Arten der Strahlengriffel ( Actinidia) Das Segelflugzeug <hr>`;
+        // Verbindung ubung2 zum HTML-Element
+        const abc = document.getElementsByName("abc");
+        const def = document.getElementsByName("def");
+        const par = document.getElementsByName("par");
+        const fld = document.getElementsByName("fld");
+        abc[0].innerHTML += `Planet`;
+        def[0].innerHTML += `Erde`;
+        par[0].innerHTML += `WebDie Erde ist der dichteste, fünftgrößte und der Sonne drittnächste Planet des Sonnensystems. Sie ist Ursprungsort und Heimat aller bekannten Lebewesen.`;
+        fld[0].innerHTML += `Name: Erde
+      Durchmesser: 12.765,28 km
+      Umfang: 40.075km
+      Umlauf um die Sonne: 365 Tage
+      Drehung um sich selbst: 23 Stunden, 56 Minuten, 4 Sekunden
+      Entfernung von der Sonne: 149,6 Millionen km
+      Temperatur: Von -60 bis +50 Grad Celsius
+      Atmosphäre: Aus Stickstoff, Sauerstoff, Wasser und Kohlendioxid`;
+        abc[1].innerHTML += ` Trapant`;
+        def[1].innerHTML += `Mond`;
+        par[1].innerHTML += `WebMond. Der Mond ( mittelhochdeutsch mâne; [2] lateinisch luna) ist der einzige natürliche Satellit der Erde. Sein Name ist etymologisch verwandt mit Monat. Weil die Trabanten <br> `;
+        fld[1].innerHTML += ` Monde sind natürliche Himmelskörper, die sich um einen anderen Körper bewegen. Genauer gesagt bewegen sich die beiden um einen gemeinsamen Schwerpunkt. Oftmals ist der sogenannte „Mutterplanet“ um ein Vielfaches schwerer als der Satellit. Wie bei den Planeten sind auch die Mondbahnen stabil, zumindest über einen langen Zeitraum. Ein Maß für die Stabilität der Bahn ist die sogenannte Roche-Grenze. Innerhalb dieser Grenze werden Trabanten irgendwann auf ihren Planeten aufschlagen. Außerhalb werden sie, wie beim Erdmond, ihre Umlaufbahn mit der Zeit vergrößern.<hr>`;
+        // Verbindung ubung3 zum HTML-Element
+        const h4 = document.getElementsByTagName("h4");
+        const di = document.getElementsByTagName("div");
+        h4[2].innerHTML += `<p><u>Milka ist Lecker</p></u>`;
+        di[5].innerHTML += `<p>WebMilka ist eine bis 1990 schweizerische Marke für Schokoladenprodukte des US-amerikanischen Nahrungsmittelkonzerns Mondelez International</p> `;
+        h4[3].innerHTML += `<i><u>Hanuta</u></i>`;
+        di[6].innerHTML += `<p>WebHanuta (eigene Schreibweise „hanuta“) ist ein Süßwarenprodukt der italienischen Firma Ferrero. Es besteht aus Kakaocreme mit Haselnussstückchen </p> `;
+        h4[4].innerHTML += `<u>Lindet Schokolade</u>`;
+        di[7].innerHTML += `<p>WebDie Chocoladefabriken Lindt & Sprüngli AG ist ein international tätiger Schweizer Schokoladen hersteller mit Sitz in Kilchberg am Zürichsee .</p><hr>`;
+        // Verbindung ubung4 zum HTML-Element
+        const ul = document.getElementsByName("gruppe a");
+        const li1 = document.getElementsByName("feld1");
+        const li2 = document.getElementsByName("feld2");
+        const ol = document.getElementsByName("gruppe b");
+        const li3 = document.getElementsByName("feld3");
+        const li4 = document.getElementsByName("feld4");
+        ul[0].style.backgroundColor = `gray`;
+        li1[0].innerHTML += `avacdo , papaja , mango , ananas`;
+        li2[0].innerHTML += `übergine , kartoffel , karoten , tomaten`;
+        ol[0].innerHTML += ` background-color: yellow;`;
+        li3[0].innerHTML += `arabisch , deutsch , englisch , türkisch`;
+        li4[0].innerHTML += `ägypten , deutschland , amerika , türkei`;
+        // Verbindung ubung5 zum HTML-Element
+        const h = document.getElementById("a");
+        const p = document.getElementById("b");
+        const d = document.getElementById("c");
+        h.innerHTML += `Sonnensystem`;
+        p.innerHTML += `WebDas Sonnensystem ist das Planetensystem, in dem sich die Erde und damit alle bekannten Lebewesen befinden. Es besteht aus der Sonne, acht sie umkreisenden Planeten`;
+        d.innerHTML += `n einem Sonnensystem umkreisen Planeten und andere Himmelskörper eine Sonne. Wenn man den Begriff Sonnensystem verwendet, meint man meistens das Sonnensystem, in dem sich auch die Erde befindet, also „unser“ Sonnensystem. Die Erde ist darin einer von acht Planeten. Unser Sonnensystem ist ungefähr viereinhalb Milliarden Jahre alt. Das sind 4.500.000.000 Jahre.<hr>`;
+        // Verbindung ubung6 zum HTML-Element
+        const ha = document.getElementsByClassName("gruppe-1")[0];
+        const hb = document.getElementsByClassName("gruppe-1")[1];
+        const pa = document.getElementsByClassName("gruppe-1")[2];
+        const da = document.getElementsByClassName("gruppe-1")[3];
+        const hc = document.getElementsByClassName("gruppe-2")[0];
+        const hd = document.getElementsByClassName("gruppe-2")[1];
+        const pc = document.getElementsByClassName("gruppe-2")[2];
+        const dc = document.getElementsByClassName("gruppe-2")[3];
+        ha.innerHTML += ` Planet<br>`;
+        hb.innerHTML += ` Venus<br>`;
+        pa.innerHTML += `WebDie Venus ist mit einer durchschnittlichen Sonnenentfernung von 108 Millionen Kilometern der zweitinnerste und mit einem Durchmesser von ca. 12.100 Kilometern der drittkleinste <br>`;
+        da.innerHTML += `Die Venus hat einen mittleren Radius von 6.052 km. Eine Reise um den Äquator dieses Planeten würde eine Strecke von etwa 38.025 km zurücklegen. Im Gegensatz zu vielen anderen Planeten des Sonnensystems, die einen Äquatorwulst aufweisen, ist die Venus eine nahezu perfekte Kugel, sodass sich ihr Radius an den Polen und am Äquator nicht unterscheidet. Der Äquatorwulst entsteht nicht, weil sich die Venus sehr langsam um ihre Achse dreht.<br>`;
+        hc.innerHTML += ` Planet <br>`;
+        hd.innerHTML += ` Mars<br>`;
+        pc.innerHTML += `WebDer Mars ist, von der Sonne aus gezählt, der vierte Planet im Sonnensystem und der äußere Nachbar der Erde. Er zählt zu den erdähnlichen (terrestrischen) Planeten<br>`;
+        dc.innerHTML += `Der Mars, auch der Rote Planet genannt, ist der Planet des Sonnensystems, der unserer Erde von allen Planeten am ähnlichsten ist. Wie auf der Erde gibt es auch auf dem Mars Jahreszeiten. An einem warmen Sommertag können die Tagestemperaturen am Äquator auf der Oberfläche des Mars einen Wert von ca. 20 Grad Celsius erreichen. Die durchschnittliche Temperatur liegt allerdings gerade einmal bei eisigen minus 33 Grad Celsius. Vor allem an den Polen wird es extrem kalt: Nicht selten werden hier Temperaturen von bis zu minus 120 Grad Celsius erreicht. Dort gefriert dann sogar das Kohlendioxid. Die extrem dünne Atmosphäre des Mars sorgt dafür, dass es an einem einzigen Tag zu Temperaturschwankungen von bis zu 100 Grad Celsius kommen kann. <br>`;
+        // Verbindung ubung7 zum HTML-Element
+        const mta = document.querySelector("main .t .a");
+        const mfa = document.querySelector("main .f  .a");
+        const mtb = document.querySelector("main .t  .b");
+        const mfb = document.querySelector("main .f  .b");
+        const mtc = document.querySelector("main .t  .c");
+        const mfc = document.querySelector("main .f  .c");
+        mta.innerHTML += `Audi`;
+        mfa.innerHTML += `WebDie Modelle hießen Audi, Audi 60, Audi 72, Audi 75, Audi 80 und Audi Super 90. 1972–1976: Audi 80 B1 Typ80: Der Audi 80 B1 (Typ80) stellte die Basis für die erste Baureihe des VW`;
+        mtb.innerHTML += `Bmw`;
+        mfb.innerHTML += `WebDie Bayerische Motoren Werke Aktiengesellschaft (BMW AG) ist ein börsennotierter Automobil- und Motorradhersteller mit Sitz in München, der auch als BMW Group auftritt.`;
+        mtc.innerHTML += `Mercedes`;
+        mfc.innerHTML += `WebMercedes-Benz ist eine eingetragene Handelsmarke für Automobile der Mercedes-Benz Group. Der Name entstand 1926 nach dem Zusammenschluss der Daimler-Motoren`;
+        // Verbindung ubung8 zum HTML-Element
+        const ga = document.querySelectorAll(".gruppe-a");
+        const f1 = document.querySelectorAll(".gruppe-a .feld1");
+        const f2 = document.querySelectorAll(".gruppe-a .feld2");
+        const gb = document.querySelectorAll(".gruppe-b");
+        const f3 = document.querySelectorAll(".gruppe-b .feld3");
+        const f4 = document.querySelectorAll(".gruppe-b .feld4");
+        ga[0].style.backgroundColor = `aquamarine`;
+        f1[0].innerHTML += `kairo , berlin , newyork , antalia`;
+        f2[0].innerHTML += `ägypten , deutschland , amerika , türkei`;
+        gb[0].style.backgroundColor = `orange`;
+        f3[0].innerHTML += `italia , espanien , grischland, niederland`;
+        f4[0].innerHTML += `rom , madried, berlin , amesterdam`;
+      </script>
+    </main>
+  </body>
+</html>
